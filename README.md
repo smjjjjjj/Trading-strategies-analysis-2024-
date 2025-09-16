@@ -4,3 +4,48 @@
 
 ## Summary
 This project collects historical price data for 58 U.S. stocks and the S&P 500 ETF, performs data cleaning, implements multiple portfolio allocation strategies (Equal-Weight, Momentum, Volatility Parity, Kelly Criterion, Minimum-Variance), and backtests them over 2024. For each strategy we produce equity curves, calculate performance metrics (CAGR, volatility, Sharpe), and compare risk metrics (VaR, max drawdown).
+
+## Sample results table (ranking through three metrics: Sharpe ratio, VaR (at level 0.05), maximum drawdown
+=== Strategy Ranking Table (1 = Best, 6 = Worst) ===
+                                          Sharpe Ratio rank  \
+Equal weight strategy                                     3   
+Momentum Allocation strategy                              2   
+Momentum Allocation strategy (cost 0.1%)                  5   
+Volatility parity strategy                                4   
+Kelly strategy (long-only)                                6   
+Minimum variance strategy (long-only)                     1   
+
+                                          VaR (level = 0.05) rank  \
+Equal weight strategy                                           3   
+Momentum Allocation strategy                                    4   
+Momentum Allocation strategy (cost 0.1%)                        5   
+Volatility parity strategy                                      2   
+Kelly strategy (long-only)                                      6   
+Minimum variance strategy (long-only)                           1   
+
+                                          Max Drawdown rank  
+Equal weight strategy                                     5  
+Momentum Allocation strategy                              3  
+Momentum Allocation strategy (cost 0.1%)                  4  
+Volatility parity strategy                                1  
+Kelly strategy (long-only)                                6  
+Minimum variance strategy (long-only)                     2
+
+
+## Conclusions
+- **Volatility Parity** provided the most stable risk-adjusted performance (highest Sharpe ratio).
+- **Momentum (no cost)** outperformed on absolute returns but suffered higher drawdowns.
+- **Kelly Criterion** showed aggressive allocation, leading to high volatility and large swings in portfolio value.
+- Including **transaction costs** significantly reduced Momentum strategy returns, showing importance of execution assumptions.
+- **Minimum-Variance** delivered the lowest volatility but also the lowest CAGR.
+
+## How to run
+1. Place your CSV files in a `data/` folder next to the notebook:
+   - `data/stocks.csv`
+   - `data/sp500_etf.csv`
+2. Open `Stock_price_project_clean.ipynb` with Jupyter and run cells top-to-bottom.
+3. The notebook will create output figures inline.
+
+## Files
+- `Stock_price_project_clean.ipynb` — cleaned notebook ready for GitHub.
+- `Stock_Price_Project_Report_with_Figures.pdf` — full PDF report with figures and results.
