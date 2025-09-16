@@ -1,2 +1,6 @@
 # Trading-strategies-analysis-2024-
-Built a Python (based on pandas and numpy) backtesting framework using real stock data (58 stocks, 251 trading days in 2024). Implemented equal-weight, momentum, volatility parity, Kelly, and minimum-variance strategies, visualized equity curves, and compared performance via sharpe ratio and risk via VaR and max drawdown."
+**Project type:** Quantitative Finance — Backtesting & Risk Analysis  
+**Languages/Libs:** Python, NumPy, pandas, matplotlib
+
+## Summary
+This project collects historical price data for 58 U.S. stocks and the S&P 500 ETF, performs data cleaning, implements multiple portfolio allocation strategies (Equal-Weight, Momentum, Volatility Parity, Kelly Criterion, Minimum-Variance), and backtests them over 2024. For each strategy we produce equity curves, calculate performance metrics (CAGR, volatility, Sharpe), and compare risk metrics (VaR, max drawdown).
