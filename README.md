@@ -8,13 +8,15 @@ This project collects historical price data for 58 U.S. stocks and the S&P 500 E
 ## Sample results table
 ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum drawdown
 === Strategy Ranking Table (1 = Best, 6 = Worst) ===
-                                          Sharpe Ratio rank  \ VaR (level = 0.05) rank \  Max Drawdown rank  
-Equal weight strategy                                     3                        3                      5
-Momentum Allocation strategy                              2                        4                      3
-Momentum Allocation strategy (cost 0.1%)                  5                        5                      4              
-Volatility parity strategy                                4                        2                      1
-Kelly strategy (long-only)                                6                        6                      6
-Minimum variance strategy (long-only)                     1                        1                      2
+| Strategy                                   | Sharpe Ratio Rank | VaR (0.05) Rank | Max Drawdown Rank |
+|--------------------------------------------|------------------|----------------|------------------|
+| Equal Weight Strategy                       | 3                | 3              | 5                |
+| Momentum Allocation Strategy                | 2                | 4              | 3                |
+| Momentum Allocation Strategy (Cost 0.1%)    | 5                | 5              | 4                |
+| Volatility Parity Strategy                  | 4                | 2              | 1                |
+| Kelly Strategy (Long-Only)                  | 6                | 6              | 6                |
+| Minimum Variance Strategy (Long-Only)       | 1                | 1              | 2                |
+
 
 
 ## Conclusions
