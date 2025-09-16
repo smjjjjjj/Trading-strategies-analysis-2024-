@@ -5,31 +5,16 @@
 ## Summary
 This project collects historical price data for 58 U.S. stocks and the S&P 500 ETF, performs data cleaning, implements multiple portfolio allocation strategies (Equal-Weight, Momentum, Volatility Parity, Kelly Criterion, Minimum-Variance), and backtests them over 2024. For each strategy we produce equity curves, calculate performance metrics (CAGR, volatility, Sharpe), and compare risk metrics (VaR, max drawdown).
 
-## Sample results table (ranking through three metrics: Sharpe ratio, VaR (at level 0.05), maximum drawdown
+## Sample results table
+ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum drawdown
 === Strategy Ranking Table (1 = Best, 6 = Worst) ===
-                                          Sharpe Ratio rank  \
-Equal weight strategy                                     3   
-Momentum Allocation strategy                              2   
-Momentum Allocation strategy (cost 0.1%)                  5   
-Volatility parity strategy                                4   
-Kelly strategy (long-only)                                6   
-Minimum variance strategy (long-only)                     1   
-
-                                          VaR (level = 0.05) rank  \
-Equal weight strategy                                           3   
-Momentum Allocation strategy                                    4   
-Momentum Allocation strategy (cost 0.1%)                        5   
-Volatility parity strategy                                      2   
-Kelly strategy (long-only)                                      6   
-Minimum variance strategy (long-only)                           1   
-
-                                          Max Drawdown rank  
-Equal weight strategy                                     5  
-Momentum Allocation strategy                              3  
-Momentum Allocation strategy (cost 0.1%)                  4  
-Volatility parity strategy                                1  
-Kelly strategy (long-only)                                6  
-Minimum variance strategy (long-only)                     2
+                                          Sharpe Ratio rank  \ VaR (level = 0.05) rank \  Max Drawdown rank  
+Equal weight strategy                                     3                        3                      5
+Momentum Allocation strategy                              2                        4                      3
+Momentum Allocation strategy (cost 0.1%)                  5                        5                      4              
+Volatility parity strategy                                4                        2                      1
+Kelly strategy (long-only)                                6                        6                      6
+Minimum variance strategy (long-only)                     1                        1                      2
 
 
 ## Conclusions
