@@ -20,11 +20,11 @@ ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum dra
 
 
 ## Conclusions
-- **Volatility Parity** provided the most stable risk-adjusted performance (highest Sharpe ratio).
+- **Volatility Parity** provided the most stable risk-adjusted performance (lowerst maximum drawdown).
 - **Momentum (no cost)** outperformed on absolute returns but suffered higher drawdowns.
 - **Kelly Criterion** showed aggressive allocation, leading to high volatility and large swings in portfolio value.
 - Including **transaction costs** significantly reduced Momentum strategy returns, showing importance of execution assumptions.
-- **Minimum-Variance** delivered the lowest volatility but also the lowest CAGR.
+- **Minimum-Variance** wass the best strategy overall, with the best sharpe ratio and VaR ranking.
 
 ## How to run
 1. Place your CSV files in a `data/` folder next to the notebook:
