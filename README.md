@@ -1,4 +1,4 @@
-# Trading-strategies-analysis-2024-
+# Trading-strategies-analysis (2024)
 **Project type:** Quantitative Finance — Backtesting & Risk Analysis  
 **Languages/Libs:** Python, NumPy, pandas, matplotlib
 
@@ -7,7 +7,6 @@ This project collects historical price data for 58 U.S. stocks and the S&P 500 E
 
 ## Sample results table
 ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum drawdown
-=== Strategy Ranking Table (1 = Best, 6 = Worst) ===
 | Strategy                                   | Sharpe Ratio Rank | VaR (0.05) Rank | Max Drawdown Rank |
 |--------------------------------------------|------------------|----------------|------------------|
 | Equal Weight Strategy                       | 3                | 3              | 5                |
