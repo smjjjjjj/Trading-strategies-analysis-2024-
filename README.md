@@ -32,12 +32,10 @@ Ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum dra
 
 ## How to run
 1. There are two datasets in the zip folder `Dataset/` folder next to the notebook:
-   - `World_stock_price_dataset.csv`
-     Datasource: https://www.kaggle.com/datasets/nelgiriyewithana/world-stock-prices-daily-updating?resource=download
-     Stock prices from 2000 to 2025
-   - `S_and_P_500_dataset.csv`
-     Datasource: https://www.kaggle.com/datasets/yousefeddin/s-and-p-500-stock-price-end-of-2024
-     S&P 500 ETF prices from 1993 to 2024.
+   - `World_stock_price_dataset.csv`: Stock prices from 2000 to 2025 (from https://www.kaggle.com/datasets/nelgiriyewithana/world-stock-prices-daily-updating?resource=download).
+     
+   - `S_and_P_500_dataset.csv`: S&P 500 ETF prices from 1993 to 2024 (from: https://www.kaggle.com/datasets/yousefeddin/s-and-p-500-stock-price-end-of-2024).
+     
 2. Open `Stock_price_project.ipynb` with Jupyter and run cells top-to-bottom.
 3. The notebook will create output figures inline.
 4. You could also use your own dataset, just put your dataset in the main file next to the Jupyter Notebook.
