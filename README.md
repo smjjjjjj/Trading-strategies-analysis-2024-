@@ -39,7 +39,7 @@ Ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum dra
 2. Download the `dataset.zip` and `Stock_price_project.ipynb`. Put both datasets next to `Stock_price_project.ipynb`.
 3. Open `Stock_price_project.ipynb` with Jupyter and run cells top-to-bottom.
 4. The notebook will create output figures inline.
-5. You could also use your own dataset, just put your dataset in the main file next to the Jupyter Notebook.
+5. You could also use your own dataset, just put your dataset in the main file next to the Jupyter Notebook, and adjust the first block in the Jupyter Notebook file accordingly.
 
 ## Files
 - `Stock_price_project.ipynb` — cleaned notebook ready for GitHub.
