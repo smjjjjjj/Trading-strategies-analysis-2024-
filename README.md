@@ -36,9 +36,10 @@ Ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum dra
      
    - `S_and_P_500_dataset.csv`: S&P 500 ETF prices from 1993 to 2024 (from: https://www.kaggle.com/datasets/yousefeddin/s-and-p-500-stock-price-end-of-2024).
      
-2. Open `Stock_price_project.ipynb` with Jupyter and run cells top-to-bottom.
-3. The notebook will create output figures inline.
-4. You could also use your own dataset, just put your dataset in the main file next to the Jupyter Notebook.
+2. Download the `dataset.zip` and `Stock_price_project.ipynb`. Put both datasets next to `Stock_price_project.ipynb`.
+3. Open `Stock_price_project.ipynb` with Jupyter and run cells top-to-bottom.
+4. The notebook will create output figures inline.
+5. You could also use your own dataset, just put your dataset in the main file next to the Jupyter Notebook.
 
 ## Files
 - `Stock_price_project.ipynb` — cleaned notebook ready for GitHub.
