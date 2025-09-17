@@ -24,11 +24,13 @@ Ranking through three metrics: Sharpe ratio, VaR (at level 95%) and maximum draw
 
 
 ## Conclusions
-- **Volatility Parity** provided the most stable risk-adjusted performance (lowerst maximum drawdown).
-- **Momentum (no cost)** outperformed on absolute returns but suffered higher drawdowns.
-- **Kelly Criterion** showed aggressive allocation, leading to high volatility and large swings in portfolio value.
-- Including **transaction costs** significantly reduced Momentum strategy returns, showing importance of execution assumptions.
-- **Minimum-Variance** was the best strategy overall, with the best sharpe ratio and VaR ranking.
+- **Minimum-Variance Strategy** delivered the best risk-adjusted performance, achieving top Sharpe ratio and lowest VaR, as its allocation favors low-volatility assets and naturally diversifies risk.
+- **Volatility Parity Strategy** had the lowest maximum drawdown because it dynamically scaled exposure to risky stocks down during volatile periods, limiting large losses.
+- **Momentum Strategy (No Cost)** generated strong returns by riding short-term trends, but its higher turnover led to larger drawdowns during reversals.
+- **Momentum Strategy (With Costs)** underperformed significantly once transaction costs were included, highlighting the importance of execution costs in high-turnover strategies.
+- **Kelly Criterion Strategy** was the most aggressive, leading to large swings in portfolio value and the weakest Sharpe ratio, as real-world returns are rarely stationary enough to justify full Kelly betting.
+- **Equal-Weight Strategy** served as a balanced benchmark: reasonable performance, moderate drawdowns, but no risk targeting — leaving room for improvement versus optimized approaches.
+
 
 ## How to run
 1. There are two datasets in the zip folder `Dataset/` folder next to the notebook:
