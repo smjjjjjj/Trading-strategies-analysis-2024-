@@ -34,9 +34,9 @@ Ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum dra
 1. Place your CSV files in a `data/` folder next to the notebook:
    - `data/stocks.csv`
    - `data/sp500_etf.csv`
-2. Open `Stock_price_project_clean.ipynb` with Jupyter and run cells top-to-bottom.
+2. Open `Stock%20price%20project.ipynb` with Jupyter and run cells top-to-bottom.
 3. The notebook will create output figures inline.
 
 ## Files
-- `Stock_price_project_clean.ipynb` — cleaned notebook ready for GitHub.
-- `Stock_Price_Project_Report_with_Figures.pdf` — full PDF report with figures and results.
+- `Stock%20price%20project.ipynb` — cleaned notebook ready for GitHub.
+- `Stock%20price%20project%20result.pdf` — full PDF report with figures and results.
