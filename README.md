@@ -11,8 +11,8 @@ Consider the maximum drawdown (largest peak-to-trough loss) of each portfolio st
 
 
 ## Sample table results
-Ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum drawdown
-| Strategy                                   | Sharpe Ratio Rank | VaR (0.05) Rank | Max Drawdown Rank |
+Ranking through three metrics: Sharpe ratio, VaR (at level 95%) and maximum drawdown
+| Strategy                                   | Sharpe Ratio Rank | VaR (95%) Rank | Max Drawdown Rank |
 |--------------------------------------------|------------------|----------------|------------------|
 | Equal Weight Strategy                       | 3                | 3              | 5                |
 | Momentum Allocation Strategy                | 2                | 4              | 3                |
