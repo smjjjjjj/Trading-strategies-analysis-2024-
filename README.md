@@ -31,9 +31,9 @@ Ranking through three metrics: Sharpe ratio, VaR (at level 0.05) and maximum dra
 - **Minimum-Variance** wass the best strategy overall, with the best sharpe ratio and VaR ranking.
 
 ## How to run
-1. Place your CSV files in a `data/` folder next to the notebook:
-   - `data/stocks.csv`
-   - `data/sp500_etf.csv`
+1. There are two datasets in the zip folder `Dataset/` folder next to the notebook:
+   - `World_stock_price_dataset.csv`
+   - `S_and_P_500_dataset.csv`
 2. Open `Stock_price_project.ipynb` with Jupyter and run cells top-to-bottom.
 3. The notebook will create output figures inline.
 
