@@ -23,7 +23,7 @@ This project collects historical price data for 58 U.S. stocks and the S&P 500 E
   - Maximum Drawdown
 
 # Project Structure
-
+```
 ├── src/              # Core logic (strategies, metrics, etc.)
 ├── scripts/          # Pipeline scripts
 ├── data/             # Data, as zip file
@@ -31,7 +31,7 @@ This project collects historical price data for 58 U.S. stocks and the S&P 500 E
 ├── results/          # Output plots / reports
 ├── main.py           # Entry point
 ├── requirements.txt
-
+```
 ## Installation
 
 ```bash
