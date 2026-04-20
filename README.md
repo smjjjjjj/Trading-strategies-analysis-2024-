@@ -22,7 +22,7 @@ This project collects historical price data for 58 U.S. stocks and the S&P 500 E
   - Value at Risk (VaR)
   - Maximum Drawdown
 
-  ## Project Structure
+# Project Structure
 
 ├── src/              # Core logic (strategies, metrics, etc.)
 ├── scripts/          # Pipeline scripts
