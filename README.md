@@ -38,7 +38,44 @@ This project collects historical price data for 58 U.S. stocks and the S&P 500 E
 pip install -r requirements.txt
 ```
 ## Data
-ss
+Two datasets are used here, both could be downloaded from Kaggle:
+- `World_stock_price_dataset.csv`: Stock prices from 2000 to 2025 (from https://www.kaggle.com/datasets/nelgiriyewithana/world-stock-prices-daily-updating?resource=download).
+- `S_and_P_500_dataset.csv`: S&P 500 ETF prices from 1993 to 2024 (from: https://www.kaggle.com/datasets/yousefeddin/s-and-p-500-stock-price-end-of-2024).
+The datasets are compressed and stored under data/raw, which could be decompressed directly to be used.
+PLEASE place them in the `data/raw` folder BEFORE running the code!
+
+## Usage
+
+### Run full pipeline
+
+```bash
+python main.py
+```
+
+Runs the entire workflow: data processing → strategy backtesting → evaluation.
+
+---
+
+### Run individual components
+
+#### Data analysis (cleaning, clustering, factor analysis)
+
+```bash
+python scripts/run_analysis.py
+```
+
+#### Backtesting strategies
+
+```bash
+python scripts/run_backtests.py
+```
+
+#### Performance evaluation
+
+```bash
+python scripts/run_evaluation.py
+```
+
 ## Sample visual results
 Consider the maximum drawdown (largest peak-to-trough loss) of each portfolio strategy:
 ![Max Drawdown](Figures/Maximum%20drawdown.png)
@@ -66,17 +103,6 @@ Ranking through three metrics: Sharpe ratio, VaR (at level 95%) and maximum draw
 - **Equal-Weight Strategy** served as a balanced benchmark: reasonable performance, moderate drawdowns, but no risk targeting — leaving room for improvement versus optimized approaches.
 
 
-## How to run
-1. There are two datasets in the zip folder `Dataset/` folder next to the notebook:
-   - `World_stock_price_dataset.csv`: Stock prices from 2000 to 2025 (from https://www.kaggle.com/datasets/nelgiriyewithana/world-stock-prices-daily-updating?resource=download).
-     
-   - `S_and_P_500_dataset.csv`: S&P 500 ETF prices from 1993 to 2024 (from: https://www.kaggle.com/datasets/yousefeddin/s-and-p-500-stock-price-end-of-2024).
-     
-2. Download the `dataset.zip` and `Stock_price_project.ipynb`. Put both datasets next to `Stock_price_project.ipynb`.
-3. Open `Stock_price_project.ipynb` with Jupyter and run cells top-to-bottom.
-4. The notebook will create output figures inline.
-5. You could also use your own dataset, just put your dataset in the main file next to the Jupyter Notebook, and adjust the first block in the Jupyter Notebook file accordingly.
-
-## Files
-- `Stock_price_project.ipynb` — cleaned notebook ready for GitHub.
-- `Stock_price_project_results.pdf` — full PDF report with figures and results.
+## Complete notebook files and results
+- `notebook/Stock_price_project.ipynb` — cleaned notebook ready for GitHub.
+- `results/Stock_price_project_results.pdf` — full PDF report with figures and results.
